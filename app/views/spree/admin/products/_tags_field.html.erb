@@ -1,0 +1,6 @@
+<div data-hook="admin_product_form_tags">
+  <%= f.field_container :tags do %>
+    <%= f.label :tags, Spree.t(:tags) %><br />
+    <%= f.text_field :tags, value: f.object.tags.join(',') %>
+  <% end %>
+</div>
